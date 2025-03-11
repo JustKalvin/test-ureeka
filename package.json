@@ -1,10 +1,13 @@
 {
+  "homepage": "https://JustKalvin.github.io/test-ureeka",
   "name": "ureeka_project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy" : "pnpm run build",
+    "deploy" : "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
